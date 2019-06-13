@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11563,6 +11563,7 @@ molded</description>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="RESET-SW1" library="adafruit" deviceset="SWITCH_PUSHBUTTON" device="SOFTTOUCHSMD_SJ"/>
 <part name="R12" library="adafruit" deviceset="R-US_" device="M0805" value="330"/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11900,6 +11901,9 @@ molded</description>
 <attribute name="NAME" x="11.43" y="-21.8186" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="11.43" y="-17.018" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="GND28" gate="1" x="238.76" y="17.78" smashed="yes" rot="R180">
+<attribute name="VALUE" x="241.3" y="20.32" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12129,6 +12133,11 @@ molded</description>
 <pinref part="GND27" gate="1" pin="GND"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="0" y1="-20.32" x2="2.54" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BME280-HEADER" gate="G$1" pin="5"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="238.76" y1="12.7" x2="238.76" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
