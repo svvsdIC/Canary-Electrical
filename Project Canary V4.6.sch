@@ -12226,17 +12226,6 @@ molded</description>
 <pinref part="SWITCHING-REGULATOR" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="AVCC"/>
-<label x="81.28" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
-<label x="33.02" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="73.66" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="71.12" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<junction x="88.9" y="73.66"/>
-</segment>
-<segment>
 <pinref part="LIDAR-HEADER" gate="A" pin="1"/>
 <wire x1="246.38" y1="40.64" x2="256.54" y2="40.64" width="0.1524" layer="91"/>
 <junction x="246.38" y="40.64"/>
@@ -12350,6 +12339,11 @@ molded</description>
 <junction x="83.82" y="114.3"/>
 <junction x="83.82" y="124.46"/>
 <label x="78.74" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="55.88" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<label x="81.28" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12735,12 +12729,6 @@ molded</description>
 <junction x="55.88" y="73.66"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="53.34" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="XTAL2"/>
@@ -12764,6 +12752,17 @@ molded</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="RESET-SW1" gate="G$1" pin="P$1"/>
 <wire x1="12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="AVCC"/>
+<wire x1="88.9" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="73.66" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="55.88" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<junction x="88.9" y="73.66"/>
 </segment>
 </net>
 </nets>
